@@ -1,0 +1,9 @@
+{
+    "name": "typescript_repros",
+    "version": "0.0.1",
+    "description": "Repros of typescript bugs",
+    "private": true,
+    "devDependencies": {
+        "typescript": "4.5.4"
+    }
+}
