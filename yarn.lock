@@ -15,13 +15,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.5.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@npm:4.5.4#.yarn/patches/typescript-npm-4.5.4-2da9ac18bd::locator=typescript_repros%40workspace%3A.":
   version: 4.5.4
-  resolution: "typescript@patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"
+  resolution: "typescript@patch:typescript@npm%3A4.5.4#.yarn/patches/typescript-npm-4.5.4-2da9ac18bd::version=4.5.4&hash=3a2a4a&locator=typescript_repros%40workspace%3A."
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2e488dde7d2c4a2fa2e79cf2470600f8ce81bc0563c276b72df8ff412d74456ae532ba824650ae936ce207440c79720ddcfaa25e3cb4477572b8534fa4e34d49
+  checksum: 23bdff674284594464517a6688e13ea84b26cecae4200277e43eb6f284bcfbfb9bb456884a311db5196f5dd3ec863dddf0897a62e29edeebe3aab201d2ebbe2a
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@patch%3Atypescript@npm%3A4.5.4%23.yarn/patches/typescript-npm-4.5.4-2da9ac18bd%3A%3Alocator=typescript_repros%2540workspace%253A.#~builtin<compat/typescript>":
+  version: 4.5.4
+  resolution: "typescript@patch:typescript@patch%3Atypescript@npm%253A4.5.4%23.yarn/patches/typescript-npm-4.5.4-2da9ac18bd%3A%3Aversion=4.5.4&hash=3a2a4a&locator=typescript_repros%2540workspace%253A.#~builtin<compat/typescript>::version=4.5.4&hash=493e53"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 0ab1a4defab8417f0ca0c7899e18577ba92d2a5adb3a22dce67aa27ce191cd49ad44465303d12379c2869cddb0e0df814c443f5a90084aae60f3c46fd614bdd6
   languageName: node
   linkType: hard
 

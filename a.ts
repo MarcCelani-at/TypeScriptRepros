@@ -1,3 +1,5 @@
+import {bar} from './b'
+
 function foo() {
-    console.log('hi there');
+    bar();
 }

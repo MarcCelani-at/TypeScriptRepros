@@ -1,0 +1,18 @@
+diff --git a/lib/tsserver.js b/lib/tsserver.js
+index 028346841ea0dcf8063bcd652ddc114182470a63..bff4cc5d68c8ac408d45f18eacbaa9dc87aac35b 100644
+--- a/lib/tsserver.js
++++ b/lib/tsserver.js
+@@ -174399,7 +174399,12 @@ var ts;
+             // changes for large reference sets? If so, do we want
+             // to increase the chunk size or decrease the interval
+             // time dynamically to match the large reference set?
+-            sys.defaultWatchFileKind = function () { return ts.WatchFileKind.FixedChunkSizePolling; };
++
++            // REPRO STEPS:
++            // run yarn install
++            // Open a.ts in VSCode
++            // If necessary, restart the TS Server, and look for this log
++            sys.defaultWatchFileKind = function () { ts.sysLog("The default watch file kind is being returned. Probably an error?"); return ts.WatchFileKind.FixedChunkSizePolling; };
+             /* eslint-disable no-restricted-globals */
+             sys.setTimeout = setTimeout;
+             sys.clearTimeout = clearTimeout;
